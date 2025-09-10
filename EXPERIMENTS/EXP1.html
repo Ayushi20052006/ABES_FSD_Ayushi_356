@@ -7,7 +7,7 @@
             border-collapse: collapse;
             border: 1px black;
             width: 50%;
-            margin-left: 25%;
+            /* margin-left: 25%; */
         }
         th, td {
             border: 1px solid #ccc;
@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-    <table>
+    <table align="center">
         <tr>
             <th rowspan="1">Logo</th>
             <th colspan="5">Web Site Name</th>
@@ -47,14 +47,26 @@
         </tr>
         <tr>
             <td class="sidebar">
-                CSE <br><br>
-                ECE <br><br>
-                EEE <br><br>
-                CIVIL
+                CSE 
             </td>
-            <td colspan="5" class="content">
+            <td colspan="5" rowspan="4" class="content">
                 Description of the WebSite
             </td>
+        </tr>
+         <tr>
+            <td class="sidebar">
+                ECE
+            </td>  
+        </tr>
+         <tr>
+            <td class="sidebar">
+                EEE
+            </td>  
+        </tr>
+         <tr>
+            <td class="sidebar">
+                CIVIL
+            </td>  
         </tr>
     </table>
 </body>
