@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Layout</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px black;
+            width: 50%;
+            margin-left: 25%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4a460;
+            color: black;
+        }
+        .bar {
+            background-color: #f7caa2;
+        }
+        .sidebar {
+            width: 20%;
+            vertical-align: top;
+            text-align: left;
+        }
+        .content {
+            height: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="1">Logo</th>
+            <th colspan="5">Web Site Name</th>
+        </tr>
+        <tr class="bar">
+            <td>Home</td>
+            <td>Login</td>
+            <td>Registration</td>
+            <td>Catalogue</td>
+            <td>Cart</td>
+        </tr>
+        <tr>
+            <td class="sidebar">
+                CSE <br><br>
+                ECE <br><br>
+                EEE <br><br>
+                CIVIL
+            </td>
+            <td colspan="5" class="content">
+                Description of the WebSite
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
