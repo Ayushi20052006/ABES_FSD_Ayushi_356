@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Layout</title>
+    <style>
+        .main {
+            border-collapse: collapse;
+            border: 1px black;
+            width: 50%;
+            padding: 4;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4a460;
+            color: black;
+        }
+        .bar {
+            background-color: #f7caa2;
+        }
+        .sidebar {
+            width: 20%;
+            vertical-align: top;
+            text-align: left;
+        }
+        .content {
+            height: 200px;
+            text-align: center;
+        }
+        .login input{
+            margin: 8px;
+            border: 3px solid black;
+        }
+        #sub{
+            background-color: white;
+            color:red;
+            padding: 4px 10px;
+            margin:15px;
+        }
+        #reset{
+            background-color: white;
+            color:red;
+             padding: 4px 10px;
+        }
+        label{
+            display: inline-block;
+            width:100px;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="main" align="center">
+        <tr>
+            <th rowspan="1">Logo</th>
+            <th colspan="5">Web Site Name</th>
+        </tr>
+        <tr class="bar">
+            <td><a href="EXP1.html">Home</a></td>
+            <td><a href="Login.html">Login</a></td>
+            <td>Registration</td>
+            <td><a href="Catalog.html">Catalogue</a></td>
+            <td>Cart</td>
+        </tr>
+        <tr>
+            <td class="sidebar">
+                CSE 
+            </td>
+            <td colspan="5" rowspan="4" class="content">
+                <form class="login">
+                    <h4>Login Page</h4>
+                    <label for="username">User Name:</label>
+                    <input type="text" name="username" required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                </form>
+                <button id="sub">Submit</button>
+                <button id="reset">Reset</button>
+            </td>
+        </tr>
+         <tr>
+            <td class="sidebar">
+                ECE
+            </td>  
+        </tr>
+         <tr>
+            <td class="sidebar">
+                EEE
+            </td>  
+        </tr>
+         <tr>
+            <td class="sidebar">
+                CIVIL
+            </td>  
+        </tr>
+    </table>
+</body>
+</html>
