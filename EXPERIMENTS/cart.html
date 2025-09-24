@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 10px black;
+            width: 800px;
+            height: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f4a460;
+            color: black;
+        }
+
+        .bar {
+            background-color: #f7caa2;
+        }
+
+        .sidebar {
+            width: 20%;
+            text-align: left;
+        }
+
+        .content {
+            height: 80px;
+            text-align: center;
+        }
+
+        .cart {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            /* justify-content: space-evenly; */
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .cart .first :first-child {
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <th rowspan="1">Logo</th>
+            <th colspan="5">Web Site Name</th>
+        </tr>
+        <tr class="bar">
+            <td><a href="EXP1.html">Home</a></td>
+            <td><a href="Login.html">Login</a></td>
+            <td><a href="registration.html">Registration</a></td>
+            <td><a href="Catalog.html">Catalogue</a></td>
+            <td><a href="cart.html">Cart</a></td>
+        </tr>
+        <tr class="sidebar">
+            <td>CSE</td>
+            <td colspan="4" rowspan="4" class="content">
+                <div class="cart">
+                    <div class="first" align="left">
+                        <p>
+                            Book Name<br />
+                            Bootstrap Reference Guide<br />
+                            Javascript for Beginners<br />
+                            PYTHON Crash Course<br />
+                            TOTAL AMOUNT: <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Price<br>
+                            $40.5<br> 
+                            $30.5<br>
+                            $50.7<br>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Quantity<br />
+                            2<br>
+                            1<br>
+                            3 <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Amount<br />
+                            $81<br />
+                            $30.5<br />
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="sidebar">
+            <td>ECE</td>
+        </tr>
+        <tr class="sidebar">
+            <td>EEE</td>
+        </tr>
+        <tr class="sidebar">
+            <td>CIVIL</td>
+        </tr>
+    </table>
+</body>
+
+</html>
