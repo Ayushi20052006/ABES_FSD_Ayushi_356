@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf3e0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f4a460;
+            color: black;
+            font-size: 20px;
+        }
+
+        .bar {
+            background-color: #f7caa2;
+        }
+
+        .bar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .bar a:hover {
+            color: #ff4500;
+        }
+
+        form {
+            text-align: left;
+            padding: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Inline radio buttons */
+        .gender-options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Header -->
+        <tr>
+            <th>Logo</th>
+            <th colspan="5">Website Name</th>
+        </tr>
+
+        <tr class="bar">
+            <td><a href="EXP1.html">Home</a></td>
+            <td><a href="Login.html">Login</a></td>
+            <td><a href="registration.html">Registration</a></td>
+            <td><a href="Catalog.html">Catalogue</a></td>
+            <td><a href="cart.html">Cart</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="6">
+                <h3 style="text-align: center;">Registration Form</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="email">E-mail ID:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" maxlength="10" required>
+
+                    <label>Sex:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="sex" value="Male"> Male</label>
+                        <label><input type="radio" name="sex" value="Female"> Female</label>
+                    </div>
+
+                    <label>Date of Birth:</label>
+                    <select name="day">
+                        <option value="">Day</option>
+                         <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+
+                    <select name="month">
+                        <option value="">Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+
+                    <select name="year">
+                        <option value="">Year</option>
+                        <script>
+                            for (let y = 1980; y <= 2025; y++) {
+                                document.write(`<option value="${y}">${y}</option>`);
+                            }
+                        </script>
+                    </select>
+
+                    <label>Languages Known:</label>
+                    <input type="checkbox" name="lang" value="English"> English
+                    <input type="checkbox" name="lang" value="Telugu"> Telugu
+                    <input type="checkbox" name="lang" value="Hindi"> Hindi
+                    <input type="checkbox" name="lang" value="Tamil"> Tamil
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
